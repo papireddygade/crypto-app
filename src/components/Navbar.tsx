@@ -15,22 +15,22 @@ const menuItem = [
   {
     key: 'Home',
     icon: <HomeOutlined />,
-    label: 'Home'
+    label: <Link to="/">Home</Link>
   },
   {
     key: 'Fund',
     icon: <FundOutlined />,
-    label: 'Fund'
+    label: <Link to="/cryptocurrencies">Cryptocurrencies</Link>
   }
   , {
     key: 'Money',
     icon: <MoneyCollectOutlined />,
-    label: 'Money'
+    label: <Link to="/exchanges">Exchanges</Link>
   },
   {
     key: 'Bulb',
     icon: <BulbOutlined />,
-    label: 'Bulb'
+    label: <Link to="/news">News</Link>
   }
 ]
 const Navbar: React.FC<NavbarProps> = () => {
@@ -73,21 +73,6 @@ const Navbar: React.FC<NavbarProps> = () => {
       </div>
       {activeMenu && (
         <Menu items={menuItem} theme="dark" />
-
-        // <Menu theme="dark">
-        //   <Menu.Item icon={<HomeOutlined />}>
-        //     <Link to="/">Home</Link>
-        //   </Menu.Item>
-        //   <Menu.Item icon={<FundOutlined />}>
-        //     <Link to="/cryptocurrencies">Cryptocurrencies</Link>
-        //   </Menu.Item>
-        //   <Menu.Item icon={<MoneyCollectOutlined />}>
-        //     <Link to="/exchanges">Exchanges</Link>
-        //   </Menu.Item>
-        //   <Menu.Item icon={<BulbOutlined />}>
-        //     <Link to="/news">News</Link>
-        //   </Menu.Item>
-        // </Menu>
       )}
     </div>
   );
