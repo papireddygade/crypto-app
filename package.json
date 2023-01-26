@@ -1,5 +1,6 @@
 {
-  "name": "coin",
+  "homepage":"https://papireddygade.github.io/crypto-app/",
+  "name": "crypto-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
